@@ -1,6 +1,12 @@
 <!--index.wxml-->
-<view class="container">
-    <view class="usermotto">
-    <text class="user-motto">我的第一个小程序</text>
-  </view>
-</view>
+
+
+<text bindtap="clickJump">跳转到第二页</text>
+
+<!--navigator 跳转-->
+<navigator url = "second?id=navigation">
+
+  <text>navigator跳转</text>
+
+<navigator/>
+

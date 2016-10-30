@@ -1,0 +1,7 @@
+<template name ="foot1">
+    脚布局1
+</template>
+
+<template name ="foot2">
+    脚布局2
+</template>

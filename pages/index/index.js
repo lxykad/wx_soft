@@ -28,5 +28,42 @@ Page({
     // 页面关闭
    // String6
     console.log("onUnload");
+  },
+  clickJump:function(){
+
+    //第一种页面跳转方式
+    wx.navigateTo({
+      url: 'second?id=22',
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
+  
+
+  //第二种跳转方式--会关闭当前页面
+
+  // wx.redirectTo({
+  //   url: 'second',
+  //   success: function(res){
+  //     // success
+  //   },
+  //   fail: function() {
+  //     // fail
+  //   },
+  //   complete: function() {
+  //     // complete
+  //   }
+  // })
+
+
+
+
   }
+
 })

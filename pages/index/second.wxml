@@ -1,3 +1,6 @@
+<!--引入模板文件 include 相当于全部复制进来-->
+<include src="../template/tool_bar"/>
+
 <view class="btn-area">
   <navigator url="index?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
   <navigator url="index?title=redirect" redirect hover-class="other-navigator-hover">在当前页打开</navigator>
@@ -7,3 +10,22 @@
 
  <text>{{aaa}}</text>
  <button bindtap="btClick">{{bt1}}</button>
+ <button bindtap="bt2Click">{{bt2}}</button>
+
+<!--条件判断标签-->
+ <view wx:if = "{{isShow}}">66666</view>
+ <view wx:else>55555</view>
+
+ <!--循环标签-->
+<view wx:for = "{{news}}" wx:for-item="wxitem" wx:key="*this">
+
+  {{index}} :  {{wxitem}}
+
+</view>
+
+<!--一个文件里有多个模板的情况-->
+<import src = "../template/foot"/>
+<template is="foot2">
+
+
+ 
