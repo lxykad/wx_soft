@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="usermotto">
+    <text class="user-motto">我的第一个小程序</text>
+  </view>
+</view>
