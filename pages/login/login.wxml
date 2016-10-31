@@ -1,1 +1,7 @@
-<text>login</text>
+<text>UserName</text>
+<input bindinput = "nameInput">name</input>
+
+<text>PWD</text>
+<input>222</input>
+
+<button bindtap = "clickLogin">点击登录<button/>
